@@ -1,0 +1,8 @@
+{
+  "files.eol": "\r\n",
+  "editor.tabSize": 2,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact"
+  ]
+}

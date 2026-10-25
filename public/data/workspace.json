@@ -1,0 +1,150 @@
+{
+  "version": 1,
+  "projects": [
+    {
+      "id": "website",
+      "name": "Обновление сайта",
+      "color": "#345dc4",
+      "createdAt": "2026-10-01T08:00:00.000Z"
+    },
+    {
+      "id": "learning",
+      "name": "Учебный план",
+      "color": "#7658af",
+      "createdAt": "2026-10-02T08:00:00.000Z"
+    },
+    {
+      "id": "personal",
+      "name": "Личные задачи",
+      "color": "#25806b",
+      "createdAt": "2026-10-03T08:00:00.000Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "site-brief",
+      "title": "Согласовать структуру сайта",
+      "description": "Запланировать этапы работы: согласовать структуру сайта. Проверить результат перед завершением задачи.",
+      "projectId": "website",
+      "status": "todo",
+      "priority": "high",
+      "dueDate": "2026-10-28",
+      "tags": [
+        "планирование"
+      ],
+      "createdAt": "2026-10-10T09:00:00.000Z",
+      "updatedAt": "2026-10-10T12:00:00.000Z"
+    },
+    {
+      "id": "site-ui",
+      "title": "Собрать компоненты интерфейса",
+      "description": "Запланировать этапы работы: собрать компоненты интерфейса. Проверить результат перед завершением задачи.",
+      "projectId": "website",
+      "status": "doing",
+      "priority": "high",
+      "dueDate": "2026-11-02",
+      "tags": [
+        "дизайн",
+        "react"
+      ],
+      "createdAt": "2026-10-11T09:00:00.000Z",
+      "updatedAt": "2026-10-11T12:00:00.000Z"
+    },
+    {
+      "id": "site-test",
+      "title": "Проверить доступность форм",
+      "description": "Запланировать этапы работы: проверить доступность форм. Проверить результат перед завершением задачи.",
+      "projectId": "website",
+      "status": "todo",
+      "priority": "normal",
+      "dueDate": "2026-11-05",
+      "tags": [
+        "тесты"
+      ],
+      "createdAt": "2026-10-12T09:00:00.000Z",
+      "updatedAt": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "site-api",
+      "title": "Описать контракт API",
+      "description": "Запланировать этапы работы: описать контракт api. Проверить результат перед завершением задачи.",
+      "projectId": "website",
+      "status": "done",
+      "priority": "normal",
+      "dueDate": "2026-10-24",
+      "tags": [
+        "api"
+      ],
+      "createdAt": "2026-10-13T09:00:00.000Z",
+      "updatedAt": "2026-10-13T12:00:00.000Z"
+    },
+    {
+      "id": "learn-redux",
+      "title": "Повторить Redux Toolkit",
+      "description": "Запланировать этапы работы: повторить redux toolkit. Проверить результат перед завершением задачи.",
+      "projectId": "learning",
+      "status": "done",
+      "priority": "normal",
+      "dueDate": "2026-10-22",
+      "tags": [
+        "redux"
+      ],
+      "createdAt": "2026-10-14T09:00:00.000Z",
+      "updatedAt": "2026-10-14T12:00:00.000Z"
+    },
+    {
+      "id": "learn-tests",
+      "title": "Написать интеграционные тесты",
+      "description": "Запланировать этапы работы: написать интеграционные тесты. Проверить результат перед завершением задачи.",
+      "projectId": "learning",
+      "status": "doing",
+      "priority": "high",
+      "dueDate": "2026-10-30",
+      "tags": [
+        "vitest"
+      ],
+      "createdAt": "2026-10-15T09:00:00.000Z",
+      "updatedAt": "2026-10-15T12:00:00.000Z"
+    },
+    {
+      "id": "learn-read",
+      "title": "Прочитать документацию хуков",
+      "description": "Запланировать этапы работы: прочитать документацию хуков. Проверить результат перед завершением задачи.",
+      "projectId": "learning",
+      "status": "todo",
+      "priority": "low",
+      "dueDate": "",
+      "tags": [
+        "react"
+      ],
+      "createdAt": "2026-10-16T09:00:00.000Z",
+      "updatedAt": "2026-10-16T12:00:00.000Z"
+    },
+    {
+      "id": "personal-backup",
+      "title": "Сохранить резервную копию",
+      "description": "Запланировать этапы работы: сохранить резервную копию. Проверить результат перед завершением задачи.",
+      "projectId": "personal",
+      "status": "todo",
+      "priority": "high",
+      "dueDate": "2026-10-20",
+      "tags": [
+        "данные"
+      ],
+      "createdAt": "2026-10-17T09:00:00.000Z",
+      "updatedAt": "2026-10-17T12:00:00.000Z"
+    },
+    {
+      "id": "personal-plan",
+      "title": "Составить план недели",
+      "description": "Запланировать этапы работы: составить план недели. Проверить результат перед завершением задачи.",
+      "projectId": "personal",
+      "status": "todo",
+      "priority": "normal",
+      "dueDate": "2026-10-26",
+      "tags": [],
+      "createdAt": "2026-10-18T09:00:00.000Z",
+      "updatedAt": "2026-10-18T12:00:00.000Z"
+    }
+  ]
+}

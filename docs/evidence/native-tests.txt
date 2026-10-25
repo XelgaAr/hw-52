@@ -1,0 +1,260 @@
+
+> hw-52-planova@1.0.0 test:logic
+> node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: demo seed is fetched once and persisted
+ok 1 - demo seed is fetched once and persisted
+  ---
+  duration_ms: 19.821429
+  type: 'test'
+  ...
+# Subtest: parallel initial reads share a request and get isolated data
+ok 2 - parallel initial reads share a request and get isolated data
+  ---
+  duration_ms: 0.915069
+  type: 'test'
+  ...
+# Subtest: malformed local data is reported without silently overwriting it
+ok 3 - malformed local data is reported without silently overwriting it
+  ---
+  duration_ms: 0.470248
+  type: 'test'
+  ...
+# Subtest: project create and edit preserve identifiers and creation dates
+ok 4 - project create and edit preserve identifiers and creation dates
+  ---
+  duration_ms: 1.357875
+  type: 'test'
+  ...
+# Subtest: concurrent mutations are serialized without lost updates
+ok 5 - concurrent mutations are serialized without lost updates
+  ---
+  duration_ms: 1.530356
+  type: 'test'
+  ...
+# Subtest: task create update delete persists correctly
+ok 6 - task create update delete persists correctly
+  ---
+  duration_ms: 1.243463
+  type: 'test'
+  ...
+# Subtest: project deletion cascades to its tasks only
+ok 7 - project deletion cascades to its tasks only
+  ---
+  duration_ms: 0.746264
+  type: 'test'
+  ...
+# Subtest: editing a missing entity does not create a replacement
+ok 8 - editing a missing entity does not create a replacement
+  ---
+  duration_ms: 1.262621
+  type: 'test'
+  ...
+# Subtest: failed mutation does not poison the queue
+ok 9 - failed mutation does not poison the queue
+  ---
+  duration_ms: 0.837912
+  type: 'test'
+  ...
+# Subtest: invalid mutation is rejected before storage is replaced
+ok 10 - invalid mutation is rejected before storage is replaced
+  ---
+  duration_ms: 1.464346
+  type: 'test'
+  ...
+# Subtest: storage failures propagate instead of pretending success
+ok 11 - storage failures propagate instead of pretending success
+  ---
+  duration_ms: 0.474394
+  type: 'test'
+  ...
+# Subtest: demo reset reloads the initial fixture
+ok 12 - demo reset reloads the initial fixture
+  ---
+  duration_ms: 0.910141
+  type: 'test'
+  ...
+# Subtest: aborted mutations do not write data
+ok 13 - aborted mutations do not write data
+  ---
+  duration_ms: 0.797621
+  type: 'test'
+  ...
+# Subtest: remote mode uses the REST contract and encoded identifiers
+ok 14 - remote mode uses the REST contract and encoded identifiers
+  ---
+  duration_ms: 1.009541
+  type: 'test'
+  ...
+# Subtest: remote non-success status rejects with useful status
+ok 15 - remote non-success status rejects with useful status
+  ---
+  duration_ms: 0.211258
+  type: 'test'
+  ...
+# Subtest: invalid remote payload is rejected by the schema
+ok 16 - invalid remote payload is rejected by the schema
+  ---
+  duration_ms: 0.283267
+  type: 'test'
+  ...
+# Subtest: request forwards cancellation and removes its timer
+ok 17 - request forwards cancellation and removes its timer
+  ---
+  duration_ms: 0.334183
+  type: 'test'
+  ...
+# Subtest: the bundled workspace passes complete validation
+ok 18 - the bundled workspace passes complete validation
+  ---
+  duration_ms: 1.677026
+  type: 'test'
+  ...
+# Subtest: date keys use the local calendar
+ok 19 - date keys use the local calendar
+  ---
+  duration_ms: 0.177448
+  type: 'test'
+  ...
+# Subtest: leap dates are validated rather than normalized silently
+ok 20 - leap dates are validated rather than normalized silently
+  ---
+  duration_ms: 0.154673
+  type: 'test'
+  ...
+# Subtest: invalid date strings are rejected
+ok 21 - invalid date strings are rejected
+  ---
+  duration_ms: 0.107973
+  type: 'test'
+  ...
+# Subtest: normalization trims fields and removes duplicate tags
+ok 22 - normalization trims fields and removes duplicate tags
+  ---
+  duration_ms: 0.685663
+  type: 'test'
+  ...
+# Subtest: normalization does not mutate its input or copy arbitrary fields
+ok 23 - normalization does not mutate its input or copy arbitrary fields
+  ---
+  duration_ms: 0.267583
+  type: 'test'
+  ...
+# Subtest: valid task has no validation errors
+ok 24 - valid task has no validation errors
+  ---
+  duration_ms: 0.293983
+  type: 'test'
+  ...
+# Subtest: task errors identify every invalid field
+ok 25 - task errors identify every invalid field
+  ---
+  duration_ms: 0.143436
+  type: 'test'
+  ...
+# Subtest: project name uniqueness is case-insensitive and excludes the edited project
+ok 26 - project name uniqueness is case-insensitive and excludes the edited project
+  ---
+  duration_ms: 0.426012
+  type: 'test'
+  ...
+# Subtest: project name and color boundaries are checked
+ok 27 - project name and color boundaries are checked
+  ---
+  duration_ms: 0.309987
+  type: 'test'
+  ...
+# Subtest: workspace rejects duplicate project identifiers
+ok 28 - workspace rejects duplicate project identifiers
+  ---
+  duration_ms: 0.292131
+  type: 'test'
+  ...
+# Subtest: workspace rejects duplicate task identifiers
+ok 29 - workspace rejects duplicate task identifiers
+  ---
+  duration_ms: 0.121863
+  type: 'test'
+  ...
+# Subtest: workspace rejects orphan tasks and invalid timestamps
+ok 30 - workspace rejects orphan tasks and invalid timestamps
+  ---
+  duration_ms: 0.137437
+  type: 'test'
+  ...
+# Subtest: workspace rejects malformed outer data
+ok 31 - workspace rejects malformed outer data
+  ---
+  duration_ms: 0.118288
+  type: 'test'
+  ...
+# Subtest: filters combine project, status, priority and search
+ok 32 - filters combine project, status, priority and search
+  ---
+  duration_ms: 0.155674
+  type: 'test'
+  ...
+# Subtest: search finds tags
+ok 33 - search finds tags
+  ---
+  duration_ms: 0.111588
+  type: 'test'
+  ...
+# Subtest: empty results remain empty
+ok 34 - empty results remain empty
+  ---
+  duration_ms: 0.071698
+  type: 'test'
+  ...
+# Subtest: sorting by deadline places missing deadlines last
+ok 35 - sorting by deadline places missing deadlines last
+  ---
+  duration_ms: 6.453772
+  type: 'test'
+  ...
+# Subtest: priority sorting is high to low
+ok 36 - priority sorting is high to low
+  ---
+  duration_ms: 0.199731
+  type: 'test'
+  ...
+# Subtest: filtering leaves input untouched
+ok 37 - filtering leaves input untouched
+  ---
+  duration_ms: 0.175695
+  type: 'test'
+  ...
+# Subtest: grouping preserves every task exactly once
+ok 38 - grouping preserves every task exactly once
+  ---
+  duration_ms: 0.102435
+  type: 'test'
+  ...
+# Subtest: overdue excludes completed tasks and current-day deadlines
+ok 39 - overdue excludes completed tasks and current-day deadlines
+  ---
+  duration_ms: 0.113952
+  type: 'test'
+  ...
+# Subtest: analytics totals and project totals agree
+ok 40 - analytics totals and project totals agree
+  ---
+  duration_ms: 0.220833
+  type: 'test'
+  ...
+# Subtest: empty workspace analytics do not divide by zero
+ok 41 - empty workspace analytics do not divide by zero
+  ---
+  duration_ms: 0.094412
+  type: 'test'
+  ...
+1..41
+# tests 41
+# suites 0
+# pass 41
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 96.512955
